@@ -1,0 +1,278 @@
+/* Main style */
+body { /* body style */
+  font-family: "Source Sans 3", Arial, sans-serif; 
+  background-color: #f3f2ef; 
+  padding: 0;
+  margin: 0;
+}
+.App {
+  display: flex;
+  flex-direction: column; /* contents are arranged vertically*/
+}
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.navbar { /* navbar styling */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.logo img {
+  height: 40px; /* linkedin Logo in navbar */
+}
+
+
+.search-bar { /* Search bar styling */
+  flex: 1;
+  margin: 0 10px;
+  margin-right: 20%;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f3f6f9;
+}
+/* Navigation links styling */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.nav-item i {
+  font-size: 18px;
+}
+.nav-item:hover {
+  color: #0073b1; /* Changes color on hover */
+}
+
+.nav-item .profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Premium link styling */
+.nav-item.premium {
+  color: #d69d00;
+  font-weight: bold;
+}
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* introduces Two columns for Profile main profile and Sidebar */
+  grid-template-rows: auto auto; /* Rows will adjust automatically */
+  gap: 20px; /* Space between boxes */
+}
+
+.main-profile {
+  grid-column: 1; /* Occupies the first column */
+  grid-row: 1; /* Stays in the first row */
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-banner {
+  height: 100px;
+  background-color: #0073b1; 
+}
+.banner-image {
+  width: 100%;
+  height: 100px;
+}
+.profile-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -50px;
+  border: 3px solid #ffffff;
+}
+
+.btn {
+  padding: 8px 16px;
+  margin: 10px 5px;
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #005582;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  grid-column: 2; /* Occupies the second column */
+  grid-row: 1; /* Stays in the first row */
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.promo-box {
+  margin-bottom: 20px;
+}
+.App
+.follow-suggestion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.follow-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.follow-btn {
+  padding: 6px 12px;
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.follow-btn:hover {
+  background-color: #005582;
+}
+
+.more-profiles {
+  margin-top: 20px;
+}
+#sname{
+  margin: 0px 7px 0px 10px;
+}
+#more{
+cursor: pointer; }
+
+.main-about {
+  grid-column: 1 / -1; /* this occupies all available columns in one go*/
+  grid-row: 2; /*Moves to the second row*/
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.show-more-button {
+  font-family: "Source Sans 3", Arial, sans-serif;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.show-more-button:hover {
+  color: #0056a3;
+  text-decoration: underline;
+}
+
+/* Container for the job item */
+.main-exp {
+  grid-column: 1 / -1;
+  grid-row: 3; /* this occupies third row*/
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+ }
+
+/* "Experience" section styling */
+.job-exp {
+  margin-bottom: 10px; /* Adds spacing below the experience heading */
+}
+
+/* Flex container for logo and details */
+.job-content {
+  display: flex; /* Aligns logo and details in a row */
+  align-items: top; /* Vertically aligns items in the center */
+  gap: 15px; /* Adds spacing between the logo and details */
+}
+
+/* Company logo styling */
+.company-logo {
+  width: 50px; /* Sets width of the logo */
+  height: 50px; /* Sets height of the logo */
+  object-fit: cover; /* Ensures the logo scales properly */
+  border-radius: 4px; /* Optional: Adds rounded corners */
+}
+
+/* Styling for the job details */
+.job-details p {
+  margin: 5px 0; /* Adds spacing between each line */
+  line-height: 1.4; /* Improves text readability */
+}
+#uni-font {
+  color: #666; /* Sets a neutral color for text */
+}
+.sol-line {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-top: 1px solid #e0e0e0;
+}
+/* Endorse section */
+.main-skill{
+  grid-column: 1 ;
+  grid-row: 4;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+.endorse-button {
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.endorse-button:hover {
+  background-color: #005a8d;
+}
+
+.end-section:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
